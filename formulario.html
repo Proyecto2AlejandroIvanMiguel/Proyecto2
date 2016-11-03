@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form name="f1" action="formulario.php" method="GET" onsubmit="return validar();">
+    
+        <table style="border-spacing: 15px; border-collapse: inherit;" > 
+        <tr>
+          <td>
+          <br/>
+             <strong><h2><u>Reserva:</u></h2><br/></strong>
+              
+           <strong> Fecha inicial:</strong>  <input type="date" name="fecha_ini" required="Se necesita una fecha minima" />
+            <strong> Fecha devolución:</strong>  <input type="date" name="fecha_dev"/>
+            <br/><br/>
+         
+ 	<strong>Tipo Recurso :    </strong>
+    
+            <select name="lugar" id="lugar">
+            <optgroup label="Aulas">
+              <option value="Aula" >Aula de Mates</option>
+              <option value="Aula">Aula de Inglés</option>
+              <option value="Aula">Aula de Castellano</option>
+              <option value="Aula">Aula de Física</option>
+              <option value="Aula" >Aula de Informática 1</option>
+              <option value="Aula">Aula de Informática 2</option>
+              </optgroup> 
+
+          
+              <optgroup label="Portatiles">
+              <option value="Portátil">Portátil 1</option>
+              <option value="Portátil">Portátil 2</option>
+              <option value="Portátil" >Portátil 3</option>
+              </optgroup>
+
+              <optgroup label="Moviles">
+              <option value="Movil">Movil 1</option>
+              <option value="Movil">Movil 2</option>
+              </optgroup>
+           
+              <optgroup label="Otros">
+              <option value="Movil">Proyector</option>
+              <option value="Movil">Carro</option>
+              </optgroup>
+		
+              
+            
+          </select><br/>
+    </td>
+</tr>
+<tr>
+<td></td>
+<td>
+<br/>
+ <input style="background-color:#90EE90" type="submit" value="Enviar"/><br/><br/></td>
+        </td>
+</tr>
+        
+        </table>
+
+
+</body>
+</html>
