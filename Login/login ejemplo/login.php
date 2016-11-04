@@ -10,12 +10,12 @@
 			//función que extrae el contenido de un array ($_REQUEST["nombre"], $_REQUEST["contrasenya"]...) en variables con el mismo nombre que tienen en origen $nombre, $contrasenya...
 			extract($_REQUEST);
 
-			echo "Nombre de usuario: $nombre<br/>";
+			echo "Nombre de usuario: $user<br/>";
 
-			echo "Contraseña: $contrasenya<br/>";
+			echo "Contraseña: $password<br/>";
 
 		?>
 
-		<a href="index.html">Volver</a>
+		<a href="login.html">Volver</a>
 	</body>
 </html>

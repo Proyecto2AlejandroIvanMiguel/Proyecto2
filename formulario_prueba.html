@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<form name="f1" action="formulario.php" method="GET" onsubmit="return validar();">
+<form name="f1" action="formulario_prueba.php" method="GET" onsubmit="return validar();">
     
         <table style="border-spacing: 15px; border-collapse: inherit;" > 
         <tr>
@@ -13,13 +13,9 @@
           <br/>
              <strong><h2><u>Reserva:</u></h2><br/></strong>
               
-           <strong> Fecha inicial:</strong>  <input type="date" name="fecha_ini" required="Se necesita una fecha minima" />
-            <strong> Fecha devolución:</strong>  <input type="date" name="fecha_dev"/>
-            <br/><br/>
-         
  	<strong>Tipo Recurso :    </strong>
     
-            <select name="lugar" id="lugar">
+            <select name="lugar" id="lugar"> 
             <optgroup label="Aulas">
               <option value="Aula" >Aula de Mates</option>
               <option value="Aula">Aula de Inglés</option>
@@ -27,6 +23,9 @@
               <option value="Aula">Aula de Física</option>
               <option value="Aula" >Aula de Informática 1</option>
               <option value="Aula">Aula de Informática 2</option>
+              <option value="Aula" >Sala de reunión</option>
+              <option value="Aula">Despacho entrevistas 1</option>
+              <option value="Aula" >Despacho entrevistas 2</option>
               </optgroup> 
 
           
@@ -44,19 +43,18 @@
               <optgroup label="Otros">
               <option value="Movil">Proyector</option>
               <option value="Movil">Carro</option>
-              </optgroup>
+              </optgroup> 
 		
-              
+              <input style  ="background-color:#90EE90 ; margin-left: 10px;" type="submit" name="reservar" value="Reservar"/><br/><br/></td>
+      
             
           </select><br/>
     </td>
 </tr>
 <tr>
 <td></td>
-<td>
 <br/>
- <input style="background-color:#90EE90" type="submit" value="Enviar"/><br/><br/></td>
-        </td>
+ 
 </tr>
         
         </table>
