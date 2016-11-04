@@ -11,7 +11,7 @@
         if(document.f1.user.value==""){
           mensaje+="el nombre de usuario\n";
         }
-        if(document.f1.password.value==""){
+        if(document.f1.pass.value==""){
           mensaje+="la contraseña\n";
         }
 
@@ -31,9 +31,8 @@
 
 <body>
 <form name="f1" action="login.php" method="GET" onsubmit="return validar();">
-  <section class="container">
   <div class="login-card">
-    <h1>Log-in</h1><br>
+    <font face="Impact" color="#9C1281"><h1><u>LOG-IN</u></h1><br></font>
     <input type="text" name="user" value="" placeholder="Nombre de usuario">
     <input type="password" name="pass" value="" placeholder="Contraseña">
     <input type="submit" name="login" class="login login-submit" value="Login">

@@ -12,7 +12,7 @@
 
 			echo "Nombre de usuario: $user<br/>";
 
-			echo "Contraseña: $password<br/>";
+			echo "Contraseña: $pass<br/>";
 
 		?>
 
