@@ -37,12 +37,18 @@
       //login
     $btn_login = $_POST['login'];
     $btn_reservar = $_POST['reservar'];
+
           //definir condiciones
+
     if ($usuario_usuario == "" && $password_usuario == "") {
-        alert('Porfavor , para reservar haz login antes .')
+        alert('Porfavor , para reservar haz login antes .');
+				return;
     }
     else{
-      
+				// Consultas para rellenar datos
+					$sql_coger_nombre = /* miguel */SELECT nombre_usuario FROM tbl_usuario WHERE usuario_usuario = $usuario_usuario ;
+					$nombre_usuario = $sql_coger_nombre;
+      	alert('Gracias por hacer login '.$nombre_usuario .' ' .$apellidos_usuario);
     }
 
     mysqli_close($conexion);
