@@ -15,17 +15,7 @@
 		//igualaciones de variable
       //tbl_reserva
 		$id_material = $_POST['material'];
-
-		if(){
-
-		}
-				$nombre = $_POST['Nombre'];
-				$apellido  = $_POST['Apellido'];
-				$consulta = sprintf("SELECT nombre, apellido, direccion, edad FROM amigos
-				    WHERE nombre='%s' AND apellido='%s'",
-				    mysql_real_escape_string($nombre),
-				    mysql_real_escape_string($apellido));
-				$resultado = mysql_query($consulta);
+			}
     mysqli_close($conexion);
 
 		?>
