@@ -1,11 +1,12 @@
 
 body {
-  background: ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: "images/fondo.jpg" ; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   font-family: 'Roboto', sans-serif;
+  background-repeat: repeat;
 }
 
 .login-card {
