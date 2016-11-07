@@ -19,28 +19,13 @@
 		if(){
 
 		}
-
-        //definir condiciones
-
-				// Lo siguiente podría ser proporcionado por un usuario, como por ejemplo
-				$nombre = 'fred';
-				$apellido  = 'fox';
-
-				// Formular la consulta
-				// Este es el mejor método para formular una consulta SQL
-				// Para más ejemplos, consulte mysql_real_escape_string()
+				$nombre = $_POST['Nombre'];
+				$apellido  = $_POST['Apellido'];
 				$consulta = sprintf("SELECT nombre, apellido, direccion, edad FROM amigos
 				    WHERE nombre='%s' AND apellido='%s'",
 				    mysql_real_escape_string($nombre),
 				    mysql_real_escape_string($apellido));
-
-				// Ejecutar la consulta
 				$resultado = mysql_query($consulta);
-
-				// Comprobar el resultado
-				// Lo siguiente muestra la consulta real enviada a MySQL, y el error ocurrido. Útil para depuración.
-				
-
     mysqli_close($conexion);
 
 		?>
