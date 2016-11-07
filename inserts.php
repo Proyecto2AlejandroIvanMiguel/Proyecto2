@@ -17,5 +17,4 @@
 		$id_material = $_POST['material'];
 			}
     mysqli_close($conexion);
-
 		?>
