@@ -22,6 +22,7 @@
 		if (!$resultado) {
 		    die('No se pudo consultar:' . mysql_error());
 		}
+		// FALTAN " php inset php update"
 echo mysql_result($resultado, 2); // imprime el nombre del tercer empleado
 		//igualaciones de variable
       //tbl_reserva
