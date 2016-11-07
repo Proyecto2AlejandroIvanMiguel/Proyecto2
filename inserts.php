@@ -11,6 +11,7 @@
       echo "</script>";
       return;
     }
+			//http://php.net/
 		if (!$enlace) {
     die('No se pudo conectar: ' . mysql_error());
 		}
