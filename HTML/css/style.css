@@ -157,7 +157,7 @@ body a{
 	width:430px;
 	height:366px;
 	display: block;
-	background: url(../images/phone.png) no-repeat;
+	background: no-repeat;
 }
 .banner_right{
 	margin-top:3em;

@@ -57,12 +57,63 @@ CoAuthor: Miguel
 
      <div class="container banner">
 	 	<div class="row">
-	 			<div class='col-md-4 banner_left'>
+	 			<form name="f1" action="formulario_prueba.php" method="GET" onsubmit="return validar();">
+    
+        <table style="border-spacing: 15px; border-collapse: inherit;" > 
+        <tr>
+          <td>
+          <br/>
+             <strong><h2><u>Reserva:</u></h2><br/></strong>
+              
+ 	<strong>Tipo Recurso :    </strong>
+    
+            <select name="material" id="material"> 
+            <optgroup label="Aulas">
+              <option value="Aula1" >Aula de Mates</option>
+              <option value="Aula2">Aula de Inglés</option>
+              <option value="Aula3">Aula de Castellano</option>
+              <option value="Aula4">Aula de Física</option>
+              <option value="Aula5" >Aula de Informática 1</option>
+              <option value="Aula6">Aula de Informática 2</option>
+              <option value="Aula7" >Sala de Reuniones</option>
+              <option value="Aula8">Despacho de Entrevistas 1</option>
+              <option value="Aula9" >Despacho de Entrevistas 2</option>
+              </optgroup> 
+
+          
+              <optgroup label="Portátiles">
+              <option value="Portatil1">Portátil 1</option>
+              <option value="Portatil2">Portátil 2</option>
+              <option value="Portatil3" >Portátil 3</option>
+              </optgroup>
+
+              <optgroup label="Móviles">
+              <option value="Movil1">Móvil 1</option>
+              <option value="Movil2">Móvil 2</option>
+              </optgroup>
+           
+              <optgroup label="Otros">
+              <option value="Proyector">Proyector</option>
+              <option value="Carro">Carro</option>
+              </optgroup> 
+		
+              <input style  ="background-color:#90EE90 ; margin-left: 10px;" type="submit" name="reservar" value="Reservar"/><br/><br/></td>
+      
+            
+          </select><br/>
+    </td>
+</tr>
+<tr>
+<td></td>
+<br/>
+ 
+</tr>
+        
+        </table>
+
 	 				<span></span>
-	 			</div>
-	 			<div class='col-md-6 banner_right'>
-	 			
-	 			</div>
+	 		
+	 		
 	 	 </div>
 	 </div>
 	 <div class="main">
@@ -75,90 +126,15 @@ CoAuthor: Miguel
 	 	<div class='container content_middle'>
 	 		<div class="row">
 	 			<div class="col-md-8 middle_left">
-	 				<ul class="test_box middle_grid">
-					    <div class="clearfix">	</div>
-		    		</ul>
-		    		<ul class="test_box">
-					    </li>
-					    <div class="clearfix">	</div>
-		    		</ul>
 	 			</div>
 	 			<div class="col-md-4">
-	 				<div class="sap_tabs">
-						 <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-						  <ul class="resp-tabs-list">
+	 				
 						  	  
 							  <div class="clear"></div>
 						  </ul>
-							<div class="resp-tabs-container">
-							    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-									<div class="facts">
-									  <div class="tab_box">
-									    
-									   </div>
-									  <ul class="tab_list">
-									  </ul>
-							        </div>
+							
 							     </div>
-							      <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-									<div class="facts">
-									  <div class="tab_box">
-									   </div>
-									  <ul class="tab_list">
-									  </ul>
-							        </div>
-							     </div>
-							      <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-									<div class="facts">
-									  <div class="tab_box">
-									   </div>
-							        </div>
-							     </div>
-							  </div>
-					        </div>
-					  </div>
-	 			</div>
-	 		</div>
-	 	 </div>
-	 	 <div class="container section_aligncenter">
-         </div>
-         <div class="container content_bottom">
-         	<div class="row">
-         		<div class='col-md-6 comment_top'>
-         			<div class="project_grid">
-			  	   	   	  <ul class="project_box">
-			  	   	   	  	<div class="clearfix"> </div>
-			  	   	   	  </ul>
-			  	   	   	  <ul class="project_box">
-			  	   	   	  	<div class="clearfix"> </div>
-			  	   	   	  </ul>
-			  	   	   	  <ul class="project_box">
-			  	   	   	  	<div class="clearfix"> </div>
-			  	   	   	  </ul>
-		  	   	   	  </div>
-         		</div>
-         		<div class='col-md-6'>
-         		  <ul class="comment_section top_grid">
-         		  	<div class="clearfix"></div>
-         		  </ul>
-         		  <ul class="comment_section">
-         		  	<div class="clearfix"></div>
-         		  </ul>
-         		</div>
-         	</div>
-         </div>
-     </div>
-     <div class="container footer">
-       <div class="footer_top">
-     	<div class="row">
-     		</div>
-     	</div>
-     	</div>
-     	<div class="footer_bottom">
-     	  <div class="copy">
-		  </div>
-     	</div>
-     </div>
+							      
  </div>
 </body>
 </html>
