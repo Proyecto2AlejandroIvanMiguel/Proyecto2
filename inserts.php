@@ -14,42 +14,12 @@
 
 		//igualaciones de variable
       //tbl_reserva
-		$id_reserva = $_POST[''];
-		$fecha_reserva = $_POST[''];
-		$fechaF_reserva = $_POST[''];
-    $estado_reserva = $_POST[''];
-      //tbl_usuario
-    $id_usuario = $_POST[''];
-    $usuario_usuario = $_POST['user'];
-    $password_usuario = $_POST['pass'];
-    $nombre_usuario = $_POST[''];
-    $apellidos_usuario = $_POST[''];
-    $tipo_usuario = $_POST[''];
-      //tbl_material
-    $id_material = $_POST[''];
-    $nombre_material = $_POST[''];
-    $tipo_material = $_POST[''];
-      //tbl_incidencia
-    $id_incidencia = $_POST[''];
-    $tipo_incidencia = $_POST[''];
-    $comentario_incidencia = $_POST[''];
-    $estado_incidencia = $_POST[''];
-      //login
-    $btn_login = $_POST['login'];
-    $btn_reservar = $_POST['reservar'];
+		$id_material = $_POST['material'];
+		
 
-          //definir condiciones
+        //definir condiciones
 
-    if ($usuario_usuario == "" && $password_usuario == "") {
-        alert('Porfavor , para reservar haz login antes .');
-				return;
-    }
-    else{
-				// Consultas para rellenar datos
-					$sql_coger_nombre = /* miguel */SELECT nombre_usuario FROM tbl_usuario WHERE usuario_usuario = $usuario_usuario ;
-					$nombre_usuario = $sql_coger_nombre;
-      	alert('Gracias por hacer login '.$nombre_usuario .' ' .$apellidos_usuario);
-    }
+
 
     mysqli_close($conexion);
 
