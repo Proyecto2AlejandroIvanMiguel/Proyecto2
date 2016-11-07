@@ -11,7 +11,17 @@
       echo "</script>";
       return;
     }
-
+		if (!$enlace) {
+    die('No se pudo conectar: ' . mysql_error());
+		}
+		if (!mysql_select_db('nombre_base_datos')) {
+		    die('No se pudo seleccionar la base de datos: ' . mysql_error());
+		}
+		$resultado = mysql_query('SELECT name FROM work.employee');
+		if (!$resultado) {
+		    die('No se pudo consultar:' . mysql_error());
+		}
+echo mysql_result($resultado, 2); // imprime el nombre del tercer empleado
 		//igualaciones de variable
       //tbl_reserva
 		$id_material = $_POST['material'];
