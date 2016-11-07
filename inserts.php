@@ -52,7 +52,7 @@
 				while ($fila = mysql_fetch_assoc($resultado)) {
 				    echo $fila['nombre'];
 				    echo $fila['apellido'];
-				    echo $fila['direccion'];d
+				    echo $fila['direccion'];
 				    echo $fila['edad'];
 				}
 
