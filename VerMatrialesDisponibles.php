@@ -12,7 +12,9 @@
 			$sin_nada = 0 ;
 			extract($_REQUEST);
 
-				$sql = "SELECT     tbl_material.nombre_material, tbl_reserva.estado_reserva AS Disponibilidad FROM		tbl_material INNER JOIN	tbl_reserva ON tbl_material.id_material = tbl_reserva.id_material GROUP BY	tbl_material.nombre_material, tbl_reserva.estado_reserva ORDER BY 	tbl_material.id_material,  tbl_reserva.estado_reserva, Disponibilidad";
+				$sql = "SELECT id_reserva, nombre_material, estado_reserva AS Disponibilidad 
+				FROM tbl_reserva
+				INNER JOIN tbl_material";
 				$reservas= mysqli_query($conexion, $sql);
 				if(mysqli_num_rows($reservas)>0){
 					echo "Número de reservas: " . mysqli_num_rows($reservas) . "<br/><br/>";
