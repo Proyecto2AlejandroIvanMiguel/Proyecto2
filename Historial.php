@@ -11,17 +11,19 @@
 			}
 			$sin_nada = 0 ;
 			extract($_REQUEST);
-			$sql = "SELECT * FROM tbl_reserva";
+			$sql = "SELECT nombre_usuario, nombre_material, fecha_reserva, fechaF_reserva, estado_reserva FROM tbl_reserva
+			INNER JOIN tbl_usuario
+			ON tbl_reserva.id_usuario = tbl_usuario.id_usuario
+			INNER JOIN tbl_material
+			ON tbl_reserva.id_material = tbl_material.id_material";
 			$reservas= mysqli_query($conexion, $sql);
       if(mysqli_num_rows($reservas>0){
-				echo "Número de reservas: " . mysqli_num_rows($reservas) . "<br/><br/>";
-			while($reserva = mysqli_fetch_array($reservas)){
-				echo "Id_reserva: " . $reserva['id_reserva'] . "<br/>";
+				while($reserva = mysqli_fetch_array($reservas)){
+				echo "Nombre Usuario: " . $reserva['nombre_usuario'] . "<br/>";
+				echo "Nombre Material" . $reserva['nombre_material'] . "<br/>";
 				echo "Fecha inicio reserva: " . $reserva['fecha_reserva'] . "<br/>";
 				echo "Fecha final reserva:" . $reserva['fechaF_reserva'] . "<br/>";
-				echo "Nombre Matrial" . $reserva['nombre_material'] . "<br/>";
-				echo "idusuario:" . $reserva['id_usuario'] . "<br/>";
-				echo "Nombre Usuario: " . $reserva['nombre_usuario'] . "<br/>";
+				echo "Nombre Material" . $reserva['nombre_material'] . "<br/>";			
 				echo "Estado reserva:";
 				if ($reserva['fechaF_reserva'] == ""){
 					echo "En Curso";
