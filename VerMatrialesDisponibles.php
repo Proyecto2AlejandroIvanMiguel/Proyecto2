@@ -32,8 +32,6 @@
 			}
 			else{
 				//COMPROBAR QUE LOS DATOS DE LA BD NO ESTAN SIN
-				echo "<script language='javascript'>alert('NO SE HA RELLENADO NINGUNA CAMPO DEL FORMULARIO.');</script>";
-				echo "<h1 style='text-align:center;'> Todas las Bicis Encontradas </h1> <br/>";
 				$sql = "SELECT * FROM tbl_material ";
 				$materiales = mysqli_query($conexion, $sql);
 				if(mysqli_num_rows($materiales)>0){
