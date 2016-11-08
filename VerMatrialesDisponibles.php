@@ -1,7 +1,7 @@
 <?php
 
 		//realizamos la conexión
-			$conexion = mysqli_connect('localhost', 'root','', 'bd_bicis');
+			$conexion = mysqli_connect('localhost', 'root','', 'bd_educayaprende');
 			$acentos = mysqli_query($conexion, "SET NAMES 'utf8'");
 
 			if (!$conexion) {
