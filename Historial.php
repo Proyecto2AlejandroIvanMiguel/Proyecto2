@@ -19,6 +19,7 @@
 				echo "Id_reserva: " . $reserva['id_reserva'] . "<br/>";
 				echo "Fecha inicio reserva: " . $reserva['fecha_reserva'] . "<br/>";
 				echo "Fecha final reserva:" . $reserva['fechaF_reserva'] . "<br/>";
+				echo "Nombre Matrial" . $reserva['nombre_material'] . "<br/>";
 				echo "idusuario:" . $reserva['id_usuario'] . "<br/>";
 				echo "Nombre Usuario: " . $reserva['nombre_usuario'] . "<br/>";
 				echo "Estado reserva:";
