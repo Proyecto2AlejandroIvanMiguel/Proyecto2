@@ -15,16 +15,14 @@
 		}
 		$sin_nada = 0 ;
 		extract($_REQUEST);
-		$usuario=$_POST['user'];
-		$password_usuario=$_POST['pass'];
-		$sql = "SELECT usuario_usuario FROM tbl_usuario WHERE usuario_usuario = $usuario AND password_usuario = $password_usuario	";
+		$sql = "SELECT * FROM tbl_usuario WHERE usuario_usuario = '$user' AND password_usuario ='$pass'	";
 		$usuarios= mysqli_query($conexion, $sql);
-		if($usuarios==0){
-			$usuario=$_POST['user'];
-			header('Location: login.html');
+		echo "$sql";
+		if(mysqli_num_rows($usuarios)>0){
+			header('Location: ../HTML/index.html');
 		}
 		else{
-			header('Location: ../HTML/index.html');
+			header('Location: login.html');
 		}
 	mysqli_close($conexion);
 		?>
