@@ -53,7 +53,7 @@
 			 </div>
 		</div>
 	<!--- //End-header---->
-	
+
 <?php
 
 		//realizamos la conexión
@@ -84,6 +84,9 @@
 				} else {
 					echo "Disponible";
 				}
+			}
+		}
+
     mysqli_close($conexion);
 		?>
 
