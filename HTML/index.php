@@ -86,7 +86,7 @@ CoAuthor: Miguel
 					}
 				}
 
-			}
+			
 			else{
 				//COMPROBAR QUE LOS DATOS DE LA BD NO ESTAN SIN
 				echo "<script language='javascript'>alert('NO SE HA RELLENADO NINGUNA CAMPO DEL FORMULARIO.');</script>";
