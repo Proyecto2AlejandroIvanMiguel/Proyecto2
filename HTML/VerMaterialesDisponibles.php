@@ -25,7 +25,35 @@
 </head>
 <body>
 
-<?php
+
+
+   <!--- start-header---->
+  <div class="wrapper">
+    <!--start-header---->
+		 <div class="header">
+	       <div class="container header_top">
+				<div class="logo" style="width: 50%;">
+				  <a href="index.html"><img src="images/logo.png" style="width:70%;" alt=""></a>
+				</div>
+		  		<div class="menu">
+					
+					<ul class="nav" id="nav">
+					  <li class="current"><a href="index.html">Inicio</a></li>
+					  <li><a href="reservas.html">Reservas</a></li>
+					  <li><a href="historial.html">Historial</a></li>
+					  <li><a href="incidencias.html">Incidencias</a></li>
+					  <li><a href="contact.html">Finalizar Reserva</a></li>
+					  <div class="clearfix"></div>
+					</ul>
+					<script type="text/javascript" src="js/responsive-nav.js"></script>
+				</div>
+	  			<div class="clearfix"> </div>
+			    <!--//End-top-nav---->
+			 </div>
+		</div>
+	<!--- //End-header---->
+
+	<?php
 
 		//realizamos la conexión
 			$conexion = mysqli_connect('localhost', 'root','', 'bd_educayaprende');
@@ -64,7 +92,7 @@
 				if(mysqli_num_rows($materiales)>0){
 					echo "Número de reservas: " . mysqli_num_rows($reservas) . "<br/><br/>";
 					while($material = mysqli_fetch_array($materiales)){
-						echo "Nombre: " . $material['nombre_matrial'] . "<br/>";
+						echo "Nombre: " . $material['nombre_material'] . "<br/>";
 					}
 				}
 				else {
@@ -76,31 +104,7 @@
 		?>
 
 
-   <!--- start-header---->
-  <div class="wrapper">
-    <!--start-header---->
-		 <div class="header">
-	       <div class="container header_top">
-				<div class="logo" style="width: 50%;">
-				  <a href="index.html"><img src="images/logo.png" style="width:70%;" alt=""></a>
-				</div>
-		  		<div class="menu">
-					
-					<ul class="nav" id="nav">
-					  <li class="current"><a href="index.html">Inicio</a></li>
-					  <li><a href="reservas.html">Reservas</a></li>
-					  <li><a href="historial.html">Historial</a></li>
-					  <li><a href="incidencias.html">Incidencias</a></li>
-					  <li><a href="contact.html">Sobre Nosotros</a></li>
-					  <div class="clearfix"></div>
-					</ul>
-					<script type="text/javascript" src="js/responsive-nav.js"></script>
-				</div>
-	  			<div class="clearfix"> </div>
-			    <!--//End-top-nav---->
-			 </div>
-		</div>
-	<!--- //End-header---->
+
 
      <div class="container banner">
 	 	<div class="row">
